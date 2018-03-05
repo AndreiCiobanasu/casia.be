@@ -1,0 +1,655 @@
+@media screen and (max-width: 991px) {
+/*/////////////////////////////////////////////////////
+			Point's communs sur une page
+/////////////////////////////////////////////////////*/
+
+	h1 {
+		font-size: 4.5vw;
+		line-height: 4.5vw;
+	}
+
+	h2 {
+		font-size: 30px;
+		line-height: 28px;
+	}
+
+	/* 3.  Travail   */
+	.travail_a, .travail_b {
+		width: 720px;
+		margin-top: 50px;
+	}
+
+	.texte {
+		padding-top: 0px;
+	}
+
+	.texte h2 {
+		margin-bottom: 10px;
+	}
+
+	.texte p br {
+		display: none;
+	}
+
+	.travail_img {
+		width: 350px;
+	}
+
+	.colone h2 {
+		margin-bottom: 25px;
+	}
+
+	.colone h2 br {
+		display: flex;
+	}
+
+	.colones-display {
+	}
+
+	.colones-display p {
+		margin-right: 40px;
+		width: 300px;
+	}
+
+	.colones-display p br {
+		display: flex;
+	}
+
+
+	/* 3.  Travail   */
+
+
+
+	/* 4.  Nos points forts  */
+	.nos_points_forts {
+		width: 720px;
+		margin-top: 50px;
+	}
+
+	.liste {
+	}
+
+	.liste div {
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	.liste li {
+		font-size: 16px;
+	}
+
+	.liste li img {
+		width: 16px;
+		position: absolute;
+	}
+
+	.liste li p {
+		margin-left: 30px;
+		line-height: 16px;
+	}
+	/* 4.  Nos points forts  */
+
+
+
+
+
+/*/////////////////////////////////////////////////////
+				Page accueil
+/////////////////////////////////////////////////////*/
+
+	.h1-page-accueil {
+		font-size: 8vw;
+		line-height: 8vw;
+	}
+
+
+	/* 2. Diaporama */
+	.slogan {
+		margin-top: 270px;
+		margin-left: 30px;
+	}
+	/* 2. Diaporama */
+
+
+
+
+	/* 3. Chauffage Plomberie Débouchage  */
+	.competences-suite-div {
+		margin-top: 70px;
+		width: 720px;
+	}
+
+	.conteneur {
+		width: 230px;
+	}
+
+	.conteneur:hover {
+		margin-top: 20px;
+
+		box-shadow: 4px 20px 20px 4px #94bae6;
+	}
+
+	.chauffage, .plomberie, .debouchage {
+		height: 200px;
+	}
+	/* 3. Chauffage Plomberie Débouchage  */
+
+
+
+
+	/* 4. Plomberie professionnelle  */
+	.plomberie-professionnelle {
+		width: 720px;
+	}
+
+	.plomberie-professionnelle p {
+		margin-right: 0px;
+		padding-left: 0px;
+		width: 650px;
+	}
+	/* 4. Plomberie professionnelle  */
+
+
+
+	/* 5. Nos services dans le détail */
+	.services-detail {
+		width: 720px;
+	}
+
+	.colones {
+		width: 33.33%;
+	}
+
+	.colone4-elements-suprimes {
+		display: none;
+	}
+
+	.petit-colone-1et4:hover {
+		margin-top: 20px;
+	}
+
+	.grand-colone-2et3:hover {
+		margin-top: 20px;
+	}
+
+	.petit-colone-2et3:hover {
+		margin-top: 470px;
+	}
+
+	.grand-colone-1et4:hover {
+		margin-top: 300px;
+	}
+	/* 5. Nos services dans le détail */
+
+
+
+	/* 6. Nos engagements: */
+	.container-casque {
+		width: 720px;
+		min-width: 720px;
+	}
+
+	#nos_engagements {
+		width: 720px;
+	}
+
+	#radio1, #radio2, #radio3, #radio4 {
+		width: 370px;
+	}
+
+	.laissez br {
+		display: none;
+	}
+	/* 6. Nos engagements: */
+
+
+/*/////////////////////////////////////////////////////
+				Page plomberie
+/////////////////////////////////////////////////////*/
+
+	.hero-plomberie .slogan {
+		margin-top: 150px;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page cuisine
+/////////////////////////////////////////////////////*/
+
+	.hero-cuisine .slogan {
+		margin-top: 120px;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page Salle de bains
+/////////////////////////////////////////////////////*/
+
+	.hero-salle-de-bains .slogan {
+		margin-top: 120px;
+	}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================  1/2 tablette  ======================================*/
+
+@media screen and (max-width: 750px) {
+/*/////////////////////////////////////////////////////
+			Point's communs sur une page
+/////////////////////////////////////////////////////*/
+	h1 {
+		font-size: 6vw;
+		letter-spacing: -2px;
+		line-height: 6vw;
+	}
+
+	h1 br {
+		display: flex;
+	}
+
+	h2 {
+		font-size: calc(20px + 2vw);
+		line-height: calc(20px + 2vw);
+	}
+
+	h2 br {
+		display: none;
+	}
+
+	h6 {
+		text-align: center;
+		font-size: 25px;
+		font-weight: 400;
+		margin-top: 25px;
+		margin-bottom: 10px;
+		letter-spacing: 5px;
+	}
+
+	.hero, .hero-chauffage, .hero-debouchage, .hero-plomberie, 
+	.hero-cuisine, .hero-salle-de-bains, .hero-sanitaires, 
+	.hero-installations {
+		margin-top: 50px;
+		width: 100%;
+	}
+
+
+	/* 3.  Travail   */
+	.travail_a, .travail_b {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.travail_b {
+		flex-direction: column-reverse;
+	}
+
+	.travail_img {
+		width: 100%;
+	}
+
+	.travail_a .texte {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.travail_b .texte {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.texte {
+		width: 94%;
+		margin-bottom: 25px;
+	}
+
+	.texte h2 {
+		margin-bottom: 4vw;
+	}
+
+	.colone h2 {
+		margin-left: 3%;
+		margin-bottom: 15px;
+	}
+	/* 3.  Travail   */
+
+
+
+	/* 4.  Nos points forts  */
+	.nos_points_forts {
+		width: 94%;
+		margin-top: 50px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.liste {
+		flex-direction: column;
+	}
+
+	.liste div {
+		width: 100%;
+		margin-right: 2%;
+	}
+
+	.liste li {
+		font-size: 16px;
+	}
+
+	.liste li img {
+		width: 16px;
+		position: absolute;
+	}
+
+	.liste li p {
+		margin-left: 30px;
+		line-height: 16px;
+	}
+	/* 4.  Nos points forts  */
+
+
+
+
+/*/////////////////////////////////////////////////////
+				Page accueil
+/////////////////////////////////////////////////////*/
+
+	.h1-page-accueil {
+		font-size: 12vw;
+		line-height: 12vw;
+	}
+
+	/* 2. Diaporama */
+	.hero {
+		display: flex;
+		height: calc(100vh - 50px);
+		background-image: url("../casia_images/plombier_hero_mobile.jpg");
+	}
+
+	.diaporama {
+		display: none;
+	}
+
+	.slogan {
+		margin-top: 55vh;
+		margin-left: 5%;
+	}
+
+	.slogan p {
+		font-size: calc(18px + 2.5vw);
+	}
+	/* 2. Diaporama */
+
+
+
+	/* 3. Chauffage Plomberie Débouchage  */
+	.competences-suite-div {
+		margin-top: 120px;
+		width: 94%;
+		height: auto;
+		flex-direction: column;
+	}
+
+	.conteneur {
+		width: 100%;
+		height: auto;
+		padding-bottom: 30px;
+		margin-bottom: 2%;
+	}
+
+	.chauffage, .plomberie, .debouchage {
+		height: 60vw;
+	}
+
+	.conteneur p {
+		margin-right: 50px;
+		margin-left: 50px;
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	.voir {
+		display: flex;
+		margin-right: 50px;
+		margin-left: 50px;
+		padding-top: 12px;
+		padding-bottom: 10px;
+		background-color: #ee6a7a;
+		border-radius: 60px;
+	}
+
+	.voir p {
+		width: 100%;
+		font-size: 23px;
+		font-family: BondarOffice-Bold, sans-serif;
+		color: #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 1px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	/* 3. Chauffage Plomberie Débouchage  */
+
+
+
+
+	/* 4. Plomberie professionnelle  */
+	.plomberie-professionnelle {
+		margin-top: 40px;
+		margin-bottom: 0px;
+		width: 94%;
+	}
+
+	.plomberie-professionnelle p {
+		padding-left: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 94%;
+		font-size: 20px;
+	}
+
+	.plomberie-professionnelle p br {
+		display: none;
+	}
+	/* 4. Plomberie professionnelle  */
+
+
+
+	/* 5. Nos services dans le détail */
+	.services-detail {
+		display: none;
+	}
+	/* 5. Nos services dans le détail */
+
+
+
+	/* 6. Nos engagements: */
+	.engagements-container {
+		margin-top: 40px;
+		height: auto;
+	}
+
+	.container-casque {
+		width: 94%;
+		min-width: 94%;
+	}
+
+	#nos_engagements {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	#nos_engagements div {
+		width: 100%;
+	}
+
+	.tableau-engagements-ordi {
+		display: none;
+	}
+
+	.tableau-engagements-mobile {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	#radio1, #radio2, #radio3, #radio4 {
+		padding: 10px;
+		padding-top: 15px;
+		width: 97%;
+		font-size: 20px;
+	}
+
+	#radio4 {
+		border-bottom: 0px;
+	}
+
+	#radio1 img, #radio2 img, #radio3 img, #radio4 img {
+		margin-top: 0px;
+	}
+
+	.check, .checkbox {
+		width: 20px;
+	}
+
+	.container-title-et-texte {
+		display: none;
+	}
+	/* 6. Nos engagements: */
+
+/*/////////////////////////////////////////////////////
+				Page chauffage
+/////////////////////////////////////////////////////*/
+
+
+	/* 2. Diaporama  */
+	.hero-chauffage {
+		background-image: url("../casia_images/chauffage-hero-mobile.jpeg");
+	}
+
+	.hero-chauffage h1 .br1{
+		display: none;
+	}
+
+	.hero-chauffage h1 .br2 {
+		display: flex;
+	}
+
+	.hero-chauffage .slogan {
+		margin-top: 120px;
+	}
+	/* 2. Diaporama  */
+
+
+/*/////////////////////////////////////////////////////
+				Page plomberie
+/////////////////////////////////////////////////////*/
+	
+	.hero-plomberie .slogan {
+		margin-top: 100px;
+	}
+
+	.hero-plomberie h1 .br2 {
+		display: flex;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page cuisine
+/////////////////////////////////////////////////////*/
+
+	.hero-cuisine .slogan {
+		margin-top: 120px;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page Salle de bains
+/////////////////////////////////////////////////////*/
+
+	.hero-salle-de-bains {
+		background-image: url("../casia_images/salle-de-bains-hero-mobile.jpeg");
+	}
+
+	.hero-salle-de-bains h1 .br2 {
+		display: flex;
+	}
+
+	.hero-salle-de-bains h1 .br1 {
+		display: none;
+	}
+
+/*/////////////////////////////////////////////////////
+				Page sanitaires
+/////////////////////////////////////////////////////*/
+
+	.hero-sanitaires {
+		background-image: url("../casia_images/sanitaires-hero-mobile.jpeg");
+	}
+
+	.hero-sanitaires h1 .br1{
+		display: none;
+	}
+
+	.hero-sanitaires h1 .br2 {
+		display: flex;
+	}
+
+	.hero-sanitaires .slogan {
+		margin-top: 120px;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page installations
+/////////////////////////////////////////////////////*/
+
+	.hero-installations .slogan {
+		margin-top: 120px;
+	}
+
+	.hero-installations {
+		background-image: url("../casia_images/hero-installations-mobile.jpg");
+	}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

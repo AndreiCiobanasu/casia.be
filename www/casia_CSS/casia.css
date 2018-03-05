@@ -1,0 +1,1595 @@
+/*/////////////////////////////////////////////////////
+			Point's communs sur une page
+/////////////////////////////////////////////////////*/
+
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+
+h1 {
+	font-family: BondarOffice-Bold, sans-serif;
+	font-weight: 400;
+	font-size: 3.5vw;
+	letter-spacing: -4px;
+	line-height: 3.5vw;
+	color: #ffffff;
+}
+
+.diaporama h1 br {
+	display: none;
+}
+
+h2 {
+	color: #427abd;
+	font-family: BondarOffice-Bold, sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+	letter-spacing: -2.5px;
+	line-height: 50px;
+}
+
+h2 br {
+	display: none;
+}
+
+h3 {
+	font-family: BondarOffice-Bold, sans-serif;
+	font-size: 50px;
+	letter-spacing: -2.5px;
+	font-weight: 400;
+	color: #c9cfd6;
+}
+
+h6 {
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-bottom: 13px;
+
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: BondarOffice-Bold, sans-serif;
+	font-weight: 400;
+	letter-spacing: 5px;
+}
+
+.visitez a:hover, 
+.plomberie-professionnelle p a:hover, 
+.casia-2017 span a:hover {
+	color: #ee6a7a;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 200ms également */
+  	transition-timing-function: ease-in;
+}
+
+/* 2. Diaporama/Hero */
+
+.hero, .hero-chauffage, .hero-debouchage, .hero-plomberie, 
+.hero-cuisine, .hero-salle-de-bains, .hero-sanitaires, .hero-installations {
+	margin-top: 75px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-chauffage .slogan, .hero-debouchage .slogan, 
+.hero-plomberie .slogan, .hero-cuisine .slogan, 
+.hero-salle-de-bains .slogan, .hero-sanitaires .slogan, 
+.hero-installations .slogan {
+	margin-top: 75px;
+}
+/* 2. Diaporama/Hero */
+
+
+
+/* 3.  Travail   */
+
+.travail_a, .travail_b {
+	width: 1400px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.travail_a .texte {
+	margin-right: 10px;
+}
+
+.travail_b .texte {
+	margin-left: 10px;
+}
+
+
+.texte {
+	padding-top: 50px;
+	font-family: BondarOffice-Regular, sans-serif;
+	font-size: 20px;
+	line-height: 1.42;
+	color: #4a4a4a;
+}
+
+.texte h2 {
+	margin-bottom: 20px;
+}
+
+/* 3.  Travail   */
+
+
+
+/* 4.  Nos points forts  */
+.nos_points_forts {
+	width: 1400px;
+	margin-top: 100px;
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.liste {
+	display: flex;
+}
+
+.liste div {
+	width: 40%;
+	margin-right: 10%;
+}
+
+.liste li {
+	padding-top: 20px;
+	list-style-type: none;
+	border-bottom: 1px #c9cfd6 solid;
+	font-family: BondarOffice-Regular, sans-serif;
+	font-size: 20px;
+	line-height: 1.42;
+	color: #4a4a4a;
+	display: flex;
+}
+
+.liste li img {
+	margin-right: 10px;
+	width: 20px;
+}
+/* 4.  Nos points forts  */
+
+
+/*/////////////////////////////////////////////////////
+				Page accueil
+/////////////////////////////////////////////////////*/
+
+/* 2. Diaporama/Hero */
+
+.hero {
+	display: none;
+}
+
+.h1-page-accueil {
+	font-size: 5vw;
+	letter-spacing: -4px;
+	margin-top: 20px;
+	line-height: 5vw;
+
+}
+
+.diaporama {
+	margin-top: 75px;
+	width: 100%;
+	height: 800px;
+	z-index: -10;
+	background-image: url("../casia_images/slide-1.jpg");
+	background-size: cover;
+	background-position: center;
+
+	webkit-animation-name: diapo;
+	webkit-animation-duration: 25s;
+	webkit-animation-timing-function: linear;
+	webkit-animation-iteration-count: infinite;
+	webkit-animation-direction: normal;
+
+	moz-animation-name: diapo;
+	moz-animation-duration: 25s;
+	moz-animation-timing-function: linear;
+	moz-animation-iteration-count: infinite;
+	moz-animation-direction: normal;
+
+	animation-name: diapo;
+	animation-duration: 25s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+@-webkit-keyframes diapo {
+	0%, 18%, 100%{background-image: url("../casia_images/reparer-installation.jpg");}
+	20%, 38%{background-image: url("../casia_images/deboucher-canalisation.jpg");}
+	40%, 58%{background-image: url("../casia_images/renover-sdb.jpg");}
+	60%, 78%{background-image: url("../casia_images/remplacer-tuyauterie.jpg");}
+	80%, 98%{background-image: url("../casia_images/installer-chaudiere.jpg");}
+}
+
+@-moz-keyframes diapo {
+	0%, 18%, 100%{background-image: url("../casia_images/reparer-installation.jpg");}
+	20%, 38%{background-image: url("../casia_images/deboucher-canalisation.jpg");}
+	40%, 58%{background-image: url("../casia_images/renover-sdb.jpg");}
+	60%, 78%{background-image: url("../casia_images/remplacer-tuyauterie.jpg");}
+	80%, 98%{background-image: url("../casia_images/installer-chaudiere.jpg");}
+}
+
+@keyframes diapo {
+	0%, 18%, 100%{background-image: url("../casia_images/reparer-installation.jpg");}
+	20%, 38%{background-image: url("../casia_images/deboucher-canalisation.jpg");}
+	40%, 58%{background-image: url("../casia_images/renover-sdb.jpg");}
+	60%, 78%{background-image: url("../casia_images/remplacer-tuyauterie.jpg");}
+	80%, 98%{background-image: url("../casia_images/installer-chaudiere.jpg");}
+
+}
+
+.slogan {
+	position: absolute;
+	margin-top: 320px;
+	margin-left: 10%;
+	z-index: 1;
+}
+
+.slogan b, .slogan p {
+	font-family: BondarOffice-Regular, sans-serif;
+	font-size: 35px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	font-weight: 400;
+}
+
+.slogan b {
+	letter-spacing: 0px;
+}
+
+.contact {
+	margin-top: 10px;
+}
+
+.pourquoi {
+	margin-top: 30px;
+}
+
+.pourquoi-choisir-casia {
+	color: #ffffff;
+	font-size: 18px;
+	font-family: BondarOffice-Bold, sans-serif;
+}
+
+
+
+
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+
+.cd-headline.slide span {
+  display: inline-block;
+  padding: .2em 0;
+}
+
+.cd-headline.slide b {
+  opacity: 0;
+  top: .2em;
+}
+
+.cd-headline.slide b.is-visible {
+  top: 0;
+  opacity: 1;
+  -webkit-animation: slide-in 1s;
+  -moz-animation: slide-in 1s;
+  animation: slide-in 1s;
+}
+
+.cd-headline.slide b.is-hidden {
+  -webkit-animation: slide-out 1s;
+  -moz-animation: slide-out 1s;
+  animation: slide-out 1s;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slide-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(120%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+}
+@-moz-keyframes slide-out {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -moz-transform: translateY(120%);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(100%);
+  }
+}
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(120%);
+    -moz-transform: translateY(120%);
+    -ms-transform: translateY(120%);
+    -o-transform: translateY(120%);
+    transform: translateY(120%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+/* 2. Diaporama/Hero */
+
+
+
+/* 3. Chauffage Plomberie Débouchage */
+.competences-suite {
+	margin-top: -200px;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 100%;
+	z-index: 2100;
+}
+
+.competences-suite-div {
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 1400px;
+	height: 510px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.competences-suite-div a {
+	text-decoration: none;
+}
+
+.conteneur {
+	margin-top: 20px;
+	width: 450px;
+	height: 480px;
+	text-decoration: none;
+	overflow: hidden;
+	background-color: #427abd;
+	border-radius: 10px;
+	transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.voir {
+	display: none;
+}
+
+.conteneur:hover {
+	margin-top: 0px;
+
+	box-shadow: 4px 20px 20px 4px #94bae6;
+	transition: all 1.35s cubic-bezier(0.05, 1, 0.22, 1);
+}
+
+.conteneur p {
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 20px;
+
+	color: #f7f4f2;
+	font-family: BondarOffice-Regular, sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+	transition: 0;
+}
+
+.chauffage, .plomberie, .debouchage {
+	width: 100%;
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px 10px 0 0;
+
+}
+
+.chauffage {
+	background-image: url("../casia_images/chauffage-first-apercu.jpg");
+
+}
+
+.plomberie {
+	background-image: url("../casia_images/plomberie-first-apercu.jpg");
+
+}
+
+.debouchage {
+	background-image: url("../casia_images/debouchage-first-apercu.jpg");
+
+}
+/* 3. Chauffage Plomberie Débouchage */
+
+
+
+
+/* 4. Plomberie professionnelle  */
+.plomberie-professionnelle {
+	margin-top: 80px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1400px;
+}
+
+.plomberie-professionnelle p {
+	width: 750px;
+	margin-top: 20px;
+	padding-left: 20%;
+
+	font-family: BondarOffice-Regular, sans-serif;
+	font-size: 20px;
+	line-height: 1.42;
+	color: #4a4a4a;
+}
+
+.plomberie-professionnelle p a {
+	font-family: BondarOffice-Bold, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: -0.5px;
+	color: #4a4a4a;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 500ms également */
+  	transition-timing-function: ease-in;
+
+}
+
+.div-img-cle {
+	height: 75vw;
+	overflow: hidden;
+	position: absolute;
+	margin-top: -550px;
+	z-index: -1;
+	width: 100%;
+}
+
+#img_cle {
+	transform-origin: 5vw 27vw;
+	transition: 1s;
+	margin-top: -6vw;
+	margin-left: 70vw;
+	width: 50vw;
+}
+/* 4. Plomberie professionnelle  */
+
+
+
+/* 5. Nos services dans le détail */
+.services-detail {
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+
+	width: 1400px;
+}
+
+.colones {
+	width: 24.8%;
+	height: 1070px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.colones p {
+	margin-left: 25px;
+	margin-right: 25px;
+	color: #ffffff;
+	font-family: BondarOffice-Regular, sans-serif;
+	font-size: 20px;
+}
+
+.petit {
+	border-radius: 10px;
+	position: absolute;
+
+	height: 400px;
+}
+
+.petit div {
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+	height: 62.5%;
+}
+
+.grand {
+	border-radius: 10px;
+	margin-right: 5%;
+	position: absolute;
+
+	height: 600px;
+}
+
+.grand div {
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+	height: 75%;
+}
+
+.blue-pale {
+	background-color: #94bae6;
+}
+
+.blue-fonce {
+	background-color: #427abd;
+}
+
+.rouge-pale {
+	background-color: #ee6a7a;
+}
+
+.petit-colone-1et4 {
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 330px;
+	transition: all 1.35s cubic-bezier(0.05, 1, 0.22, 1);
+}
+
+.petit-colone-2et3 {
+	margin-top: 640px;
+	margin-right: 20px;
+	width: 330px;
+	transition: all 1.35s cubic-bezier(0.05, 1, 0.22, 1);
+}
+
+.grand-colone-1et4 {
+	margin-top: 440px;
+	margin-right: 20px;
+	width: 330px;
+	transition: all 1.35s cubic-bezier(0.05, 1, 0.22, 1);
+}
+
+.grand-colone-2et3 {
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 330px;
+	transition: all 1.35s cubic-bezier(0.05, 1, 0.22, 1);
+}
+
+.petit-colone-1et4:hover {
+	margin-top: 10px;
+	box-shadow: 4px 15px 20px 4px #427abd;
+	transition: all 1.35s cubic-bezier(0.05, 1, 0.22, 1);
+}
+
+.petit-colone-2et3:hover {
+	margin-top: 630px;
+	box-shadow: 4px 15px 20px 4px #94bae6;
+	transition: all 1.35s cubic-bezier(0.05, 1, 0.22, 1);
+}
+
+.grand-colone-1et4:hover {
+	margin-top: 430px;
+	box-shadow: 4px 15px 20px 4px #94bae6;
+	transition: all 1.35s cubic-bezier(0.05, 1, 0.22, 1);
+}
+
+.grand-colone-2et3:hover {
+	margin-top: 10px;
+	box-shadow: 4px 15px 20px 4px #94bae6;
+	transition: all 1.35s cubic-bezier(0.05, 1, 0.22, 1);
+}
+
+.img-plomberie {
+	background-image: url("../casia_images/plomberie-apercu.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.img-cuisine {
+	background-image: url("../casia_images/cuisine-apercu.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.img-chauffage {
+	background-image: url("../casia_images/chauffage-apercu.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.img-salle-de-bains {
+	background-image: url("../casia_images/salle-de-bains-apercu.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.img-debouchage {
+	background-image: url("../casia_images/debouchage-apercu.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.img-tuyauterie {
+	background-image: url("../casia_images/tuyauterie-apercu.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.img-sanitaires {
+	background-image: url("../casia_images/sanitaires-aperçu.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.img-conseil {
+	background-image: url("../casia_images/conseil-apercu.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.visitez {
+	clear: both;
+	color: #4a4a4a;
+	font-size: 20px;
+	font-family: BondarOffice-Regular, sans-serif;
+}
+
+.visitez br {
+	display: none;
+}
+
+.visitez a {
+	text-decoration: none;
+	color: #427abd;
+	font-family: BondarOffice-Bold, sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 500ms également */
+  	transition-timing-function: ease-in;
+}
+
+.visitez a:hover, .plomberie-professionnelle p a:hover{
+	color: #ee6a7a;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 500ms également */
+  	transition-timing-function: ease-in;
+}
+/* 5. Nos services dans le détail */
+
+
+
+/* 6. Nos engagements: */
+.engagements-container {
+	margin-top: 100px;
+	height: 750px;
+}
+
+.container-casque {
+	width: 85%;
+	max-width: 1700px;
+	min-width: 1450px;
+	display: flex;
+}
+
+.casque {
+	width: 830px;
+}
+
+#nos_engagements {
+	width: 600px;
+	margin-left: auto;
+	margin-top: 120px;
+}
+
+.tableau-engagements-ordi {
+	flex-direction: column;
+}
+
+.tableau-engagements-mobile {
+	display: none;
+}
+
+#nos_engagements div {
+	margin-top: 20px;
+}
+
+#radio1, #radio2, #radio3, #radio4 {
+	padding: 10px;
+	width: 500px;
+	font-size: 20px;
+	font-family:  BondarOffice-Regular, sans-serif;
+	color: #4a4a4a;
+	border-bottom: 2px #c9cfd6 solid;
+}
+
+#radio1 img, #radio2 img, #radio3 img, #radio4 img {
+	float: right;
+	margin-top: 8px;
+	display: none;
+}
+
+.container-title-et-texte {
+	width: 610px;
+}
+
+#deplacement {
+	margin-top: 50px;
+	font-family: BondarOffice-Bold, sans-serif;
+	font-size: 28px;
+	color: #4a4a4a;
+}
+
+.laissez {
+	margin-top: 20px;
+	font-size: 22px;
+	font-family: BondarOffice-Regular, sans-serif;
+	color: #4a4a4a;
+}
+/* 6. Nos engagements: */
+
+/*/////////////////////////////////////////////////////
+				Page chauffage
+/////////////////////////////////////////////////////*/
+
+.hero-chauffage {
+	background-image: url("../casia_images/chauffage-hero.jpeg");
+}
+
+.hero-chauffage h1 .br2 {
+	display: none;
+}
+
+.texte h2 br {
+	display: flex;
+}
+
+
+/*/////////////////////////////////////////////////////
+				Page débouchage
+/////////////////////////////////////////////////////*/
+
+.hero-debouchage {
+	background-image: url("../casia_images/debouchage-hero.jpeg");
+}
+
+.hero-debouchage h1 .br2 {
+	display: none;
+}
+
+
+/*/////////////////////////////////////////////////////
+				Page plomberie
+/////////////////////////////////////////////////////*/
+
+.hero-plomberie {
+	background-image: url("../casia_images/plomberie-hero.jpg");
+}
+
+.hero-plomberie h1 .br2 {
+	display: none;
+}
+
+
+/*/////////////////////////////////////////////////////
+				Page cuisine
+/////////////////////////////////////////////////////*/
+
+.hero-cuisine {
+	background-image: url("../casia_images/cuisine-hero.jpg");
+}
+
+
+/*/////////////////////////////////////////////////////
+				Page Salle de bains
+/////////////////////////////////////////////////////*/
+
+.hero-salle-de-bains {
+	background-image: url("../casia_images/hero-salle-de-bains.jpeg");
+}
+
+.hero-salle-de-bains h1 .br2 {
+	display: none;
+}
+
+/*/////////////////////////////////////////////////////
+				Page sanitaires
+/////////////////////////////////////////////////////*/
+
+.hero-sanitaires {
+	background-image: url("../casia_images/sanitaires-hero.jpeg");
+}
+
+.hero-sanitaires h1 .br2 {
+	display: none;
+}
+
+.texte h2 br {
+	display: flex;
+}
+
+/*/////////////////////////////////////////////////////
+				Page en savoir plus
+/////////////////////////////////////////////////////*/
+
+.bry3 {
+	display: flex;
+}
+
+.colone {
+	flex-direction: column;
+}
+
+.colones-display {
+	display: flex;
+	color: #4a4a4a;
+	font-family: NeuzeitOffice;
+}
+
+.colones-display p {
+	margin-right: 100px;
+	width: 600px;
+    font-family: BondarOffice-Regular, sans-serif;
+}
+
+.colones-display p span a {
+	font-family: BondarOffice-Bold, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: -0.5px;
+	color: #4a4a4a;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 200ms également */
+  	transition-timing-function: ease-in;
+}
+
+.colones-display p span a:hover {
+	color: #ee6a7a;
+}
+
+/*/////////////////////////////////////////////////////
+				Page installations
+/////////////////////////////////////////////////////*/
+
+.hero-installations {
+	background-image: url("../casia_images/hero-installations.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================  Medium résolution  ======================================*/
+
+
+@media screen and (max-width: 1470px) {
+
+	.h1-page-accueil {
+		font-size: 6vw;
+		line-height: 6vw;
+		margin-top: 10px;
+	}
+
+	h2 {
+		font-size: 45px;
+		line-height: 40px;
+	}
+/*/////////////////////////////////////////////////////
+			Point's communs sur une page
+/////////////////////////////////////////////////////*/
+
+	/* 3.  Travail   */
+	.travail_a, .travail_b {
+		width: 1100px;
+	}
+
+	.texte {
+		padding-top: 30px;
+		font-size: 17px;
+	}
+
+	.texte h2 {
+		margin-bottom: 20px;
+	}
+
+	.travail_img {
+		width: 500px;
+	}
+	/* 3.  Travail   */
+
+
+
+	/* 4.  Nos points forts  */
+	.nos_points_forts {
+		width: 1100px;
+	}
+
+	.liste li {
+		padding-top: 15px;
+		font-size: 17px;
+	}
+
+	.liste li img {
+		width: 17px;
+	}
+	/* 4.  Nos points forts  */
+
+
+
+/*/////////////////////////////////////////////////////
+				Page accueil
+/////////////////////////////////////////////////////*/
+
+	.diporama h1 {
+		font-size: 8vw;
+		letter-spacing: -4px;
+		line-height: 8vw;
+	}
+
+	h6 {
+		margin-top: 15px;
+		margin-bottom: 10px;
+		margin-left: 18px;
+		font-size: 17px;
+	}
+
+
+
+
+	/* 2. Diaporama  */
+	.diaporama {
+		height: 550px;
+	}
+
+	.slogan {
+		margin-top: 230px;
+	}
+	/* 2. Diaporama  */
+
+
+
+	/* 3. Chauffage Plomberie Débouchage  */
+	.competences-suite {
+		margin-top: -80px;
+	}
+
+	.competences-suite-div {
+		width: 1100px;
+		height: 410px;
+	}
+
+	.conteneur {
+		width: 350px;
+		height: 380px;
+	}
+
+	.conteneur br {
+		display: none;
+	}
+
+	.conteneur p {
+		margin-left: 18px;
+		margin-right: 18px;
+		font-size: 17px;
+	}
+
+	.chauffage, .plomberie, .debouchage {
+		height: 240px;
+
+	}
+	/* 3. Chauffage Plomberie Débouchage  */
+
+
+
+
+	/* 4. Plomberie professionnelle  */
+	.plomberie-professionnelle {
+		width: 1100px;
+	}
+
+	.plomberie-professionnelle p {
+		font-size: 18px;
+		padding-left: 10%;
+	}
+
+	.plomberie-professionnelle p a {
+		font-size: 14px;
+	}
+
+	#img_cle {
+		margin-top: 1vw;
+	}
+	/* 4. Plomberie professionnelle  */
+
+
+
+	/* 5. Nos services dans le détail */
+	.services-detail {
+		width: 1100px;
+	}
+
+	.colones {
+		width: 24.8%;
+		height: 780px;
+		margin-bottom: 20px;
+	}
+
+	.colones p {
+		margin-left: 18px;
+		margin-right: 18px;
+		font-size: 17px;
+	}
+
+	.colones br {
+		display: none;
+	}
+
+	.petit {
+		height: 280px;
+	}
+
+	.petit div {
+		height: 57%;
+	}
+
+	.grand {
+		border-radius: 10px;
+		margin-right: 5%;
+		height: 450px;
+	}
+
+	.grand div {
+		border-radius: 10px 10px 0px 0px;
+		width: 100%;
+		height: 72%;
+	}
+
+	.petit-colone-1et4 {
+		margin-top: 20px;
+		margin-right: 20px;
+		width: 255px;
+	}
+
+	.petit-colone-2et3 {
+		margin-top: 490px;
+		margin-right: 20px;
+		width: 255px;
+	}
+
+	.grand-colone-1et4 {
+		margin-top: 320px;
+		margin-right: 20px;
+		width: 255px;
+	}
+
+	.grand-colone-2et3 {
+		margin-top: 20px;
+		margin-right: 20px;
+		width: 255px;
+	}
+
+	.petit-colone-1et4:hover {
+		margin-top: 10px;
+	}
+
+	.petit-colone-2et3:hover {
+		margin-top: 480px;
+	}
+
+	.grand-colone-1et4:hover {
+		margin-top: 310px;
+	}
+
+	.grand-colone-2et3:hover {
+		margin-top: 10px;
+	}
+
+	.visitez {
+		font-size: 17px;
+	}
+
+	.visitez a {
+		font-size: 16px;
+	}
+	/* 5. Nos services dans le détail */
+
+
+
+	/* 6. Nos engagements: */
+	.engagements-container {
+		height: 470px;
+	}
+
+	.container-casque {
+		width: 85%;
+		min-width: 1100px;
+		display: flex;
+	}
+
+	.casque {
+		width: 500px;
+		margin-right: 20px;
+	}
+
+	#nos_engagements {
+		width: 610px;
+		margin-top: 0px;
+	}
+
+	#deplacement {
+		margin-top: 45px;
+		font-size: 24px;
+	}
+
+	.laissez {
+		margin-top: 15px;
+		font-size: 18px;
+	}
+	/* 6. Nos engagements: */
+
+
+
+/*/////////////////////////////////////////////////////
+				Page plomberie
+/////////////////////////////////////////////////////*/
+
+	.hero-plomberie .slogan {
+		margin-top: 125px;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page cuisine
+/////////////////////////////////////////////////////*/
+
+	.hero-cuisine .slogan {
+		margin-top: 100px;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page Salle de bains
+/////////////////////////////////////////////////////*/
+
+	.hero-salle-de-bains .slogan {
+		margin-top: 100px;
+	}
+
+/*/////////////////////////////////////////////////////
+				Page en savoir plus
+/////////////////////////////////////////////////////*/
+
+.colones-display p {
+	margin-right: 70px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================  Petite résolution  ======================================*/
+
+@media screen and (max-width: 1150px) {
+
+	h2 {
+		font-size: 40px;
+	}
+/*/////////////////////////////////////////////////////
+			Point's communs sur une page
+/////////////////////////////////////////////////////*/
+
+	/* 3.  Travail   */
+	.travail_a, .travail_b {
+		width: 950px;
+	}
+
+	.texte {
+		padding-top: 20px;
+		font-size: 16px;
+	}
+
+	.texte h2 {
+		margin-bottom: 15px;
+	}
+
+	.travail_img {
+		width: 420px;
+	}
+	/* 3.  Travail   */
+
+
+	/* 4.  Nos points forts  */
+	.nos_points_forts {
+		width: 950px;
+	}
+
+	.liste div {
+		width: 45%;
+		margin-right: 5%;
+	}
+
+	.liste li {
+		font-size: 16px;
+	}
+
+	.liste li img {
+		width: 16px;
+	}
+	/* 4.  Nos points forts  */
+
+/*/////////////////////////////////////////////////////
+				Page accueil
+/////////////////////////////////////////////////////*/
+
+	.h1-page-accueil {
+		font-size: 7vw;
+		line-height: 7vw;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	h6 {
+		margin-top: 15px;
+		margin-bottom: 10px;
+		margin-left: 14px;
+		font-size: 17px;
+		letter-spacing: 3px;
+	}
+
+	/* 3. Chauffage Plomberie Débouchage  */
+	.competences-suite-div {
+		width: 950px;
+		height: 430px;
+	}
+
+	.conteneur {
+		width: 300px;
+		height: 400px;
+	}
+	/* 3. Chauffage Plomberie Débouchage  */
+
+
+
+
+	/* 4. Plomberie professionnelle  */
+	.plomberie-professionnelle {
+		width: 950px;
+	}
+
+	.plomberie-professionnelle p {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.div-img-cle {
+		display: none;
+	}
+	/* 4. Plomberie professionnelle  */
+
+
+
+	/* 5. Nos services dans le détail */
+	.services-detail {
+		width: 950px;
+	}
+
+	.colones {
+		width: 24.7%;
+		height: 740px;
+	}
+
+	.colones p {
+		margin-left: 14px;
+		margin-right: 14px;
+		font-size: 16px;
+	}
+
+	.petit {
+		height: 260px;
+	}
+
+	.grand {
+		height: 430px;
+	}
+
+	.petit-colone-1et4 {
+		width: 220px;
+	}
+
+	.petit-colone-2et3 {
+		margin-top: 470px;
+		width: 220px;
+	}
+
+	.grand-colone-1et4 {
+		margin-top: 300px;
+		width: 220px;
+	}
+
+	.grand-colone-2et3 {
+		width: 220px;
+	}
+
+	.petit-colone-2et3:hover {
+		margin-top: 460px;
+	}
+
+	.grand-colone-1et4:hover {
+		margin-top: 290px;
+	}
+
+	.visitez {
+		font-size: 16px;
+	}
+
+	.visitez br {
+		display: flex;
+	}
+
+	.visitez a {
+		font-size: 16px;
+	}
+	/* 5. Nos services dans le détail */
+
+
+
+	/* 6. Nos engagements: */
+	.engagements-container {
+		height: 250px;
+	}
+
+	.container-casque {
+		width: 950px;
+		min-width: 950px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.casque {
+		display: none;
+	}
+
+	#nos_engagements {
+		width: 950px;
+		display: flex;
+	}
+
+	#radio1, #radio2, #radio3, #radio4 {
+		font-size: 16px;
+		width: 450px;
+	}
+
+	.container-title-et-texte {
+		width: 500px;
+		padding-left: 30px;
+	}
+
+	#deplacement {
+		font-size: 20px;
+	}
+
+	.laissez {
+		font-size: 16px;
+	}
+	/* 6. Nos engagements: */
+
+
+
+/*/////////////////////////////////////////////////////
+				Page débouchage
+/////////////////////////////////////////////////////*/
+
+	.hero-debouchage h1 .br2 {
+		display: flex;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page plomberie
+/////////////////////////////////////////////////////*/
+
+	.hero-plomberie .slogan {
+		margin-top: 150px;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page cuisine
+/////////////////////////////////////////////////////*/
+
+	.hero-cuisine .slogan {
+		margin-top: 120px;
+	}
+
+
+/*/////////////////////////////////////////////////////
+				Page Salle de bains
+/////////////////////////////////////////////////////*/
+
+	.hero-salle-de-bains .slogan {
+		margin-top: 120px;
+	}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

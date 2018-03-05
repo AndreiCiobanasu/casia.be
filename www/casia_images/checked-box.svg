@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.102044712" y="1.52196179" width="9" height="9" rx="1"></rect>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Portrait" transform="translate(-282.000000, -1941.000000)">
+            <g id="Group-2" transform="translate(282.000000, 1941.000000)">
+                <g id="Rectangle-6">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#C9CFD6" stroke-width="1" x="0.602044712" y="2.02196179" width="8" height="8" rx="1"></rect>
+                </g>
+                <g id="noun_538550_cc" transform="translate(1.297857, 0.199581)" fill="#427ABD">
+                    <g id="Group" transform="translate(0.000000, -0.000000)">
+                        <path d="M9.58833394,0.120761894 C6.62556006,1.93750738 4.47534219,4.22918695 3.50963031,5.37936489 L1.14401342,3.52602798 L0.0990829817,4.36838526 L4.18676032,8.52547314 C4.89029652,6.72343967 7.11822401,3.20160914 9.83881546,0.699434562 L9.58833394,0.120761894 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

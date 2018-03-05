@@ -1,0 +1,1042 @@
+html, html a {
+	-webkit-font-smoothing: antialiased !important;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	width: 100;
+}
+
+body {
+	background-color: #f7f4f2;
+	overflow-x: hidden;
+}
+
+@font-face {
+	font-family: 'BondarOffice-Bold';
+	src: url(../webfonts/BondarOffice-Bold.WOFF) format('woff');
+}
+
+@font-face {
+	font-family: 'BondarOffice-Regular';
+	src: url(../webfonts/BondarOffice-Regular.WOFF) format('woff');
+}
+
+@media screen and (min-width: 1920px) {
+	.h1-page-accueil {
+		font-size: 100px;
+		line-height: 100px;
+	}	
+}
+
+
+h1 {
+	margin-bottom: 15px;
+}
+
+.slogan p {
+	margin-bottom: 15px;
+}
+
+
+.contact {
+	display: flex;
+}
+
+.appel {
+	padding: 5px;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	width: 200px;
+	text-decoration: none;
+	border: 1.5px #ee6a7a solid;
+	border-radius: 40px;
+	background-color: #ee6a7a;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: BondarOffice-Bold, sans-serif;
+	letter-spacing: 1px;
+	display: flex;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 500ms également */
+  	transition-timing-function: ease-in;
+}
+
+.appel:hover {
+	color: #ee6a7a;
+	background-color: #f7f4f2;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 500ms également */
+  	transition-timing-function: ease-in;
+}
+
+.appel img {
+	color: green;
+	width: 15px;
+	fill: green;
+	padding-bottom: 2px;
+	padding-right: 8px;
+}
+
+.e-mail {
+	margin-left: 30px;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	width: 100px;
+	text-decoration: none;
+	border: 1.5px #427abd solid;
+	border-radius: 40px;
+	background-color: #427abd;
+	color: #ffffff;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: BondarOffice-Bold, sans-serif;
+	display: flex;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 500ms également */
+  	transition-timing-function: ease-in;
+}
+
+.e-mail:hover {
+	color: #427abd;
+	background-color: #f7f4f2;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 500ms également */
+  	transition-timing-function: ease-in;
+}
+
+.e-mail img {
+	width: 20px;
+	margin-bottom: 8px;
+	padding-right: 8px;
+}
+
+
+
+
+
+
+
+
+/* 1. Nav-bar */
+.nav-bar {
+	top: 0;
+
+	width: 100%;
+	height: 75px;
+	background-color: #427abd;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	z-index: 100;
+}
+
+.a_logo {
+	margin-top: 15px;
+}
+
+.logo {
+	width: 120px;
+}
+
+.competences {
+	width: 400px;
+	padding-top: 7px;
+	margin-left: 12%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.competences a {
+	text-decoration: none;
+	height: 24px;
+	padding-top: 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: BondarOffice-Regular, sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.hvr-overline-from-left:before {
+  background: white;
+  height: 3px;
+}
+
+.gsm {
+	margin-top: 32px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: BondarOffice-Regular, sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.gsm span {
+	margin-left: 20px;
+
+	font-family: BondarOffice-Bold, sans-serif;
+}
+
+.gsm a {
+	text-decoration: none;
+	color: #ffffff;
+}
+/* 1. Nav-bar */
+
+
+
+/* 8. Nous sommes prêts à partir */
+.prets-a-partir {
+	margin-top: 100px;
+	padding: 100px;
+	padding-top: 80px;
+	padding-bottom: 130px;
+	padding-left: 0px;
+	padding-right: 0px;
+
+	height: 100px;
+	background-image: url("../casia_images/outils.jpg");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden; 
+}
+
+.container-appel {
+	width: 1400px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+}
+
+.container-appel div {
+	margin-top: 10px;
+	display: flex;
+}
+
+#temps {
+	font-family: BondarOffice-Regular, sans-serif;
+	margin-right: 15px;
+}
+/* 8. Nous sommes prêts à partir */
+
+
+
+
+/* 9. Lieux de travail */
+.lieux_de_travail {
+	width: 1400px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.lieux_de_travail p {
+	text-decoration: none;
+	color: #4a4a4a; 
+}
+
+.nous_desservons {
+	font-family: BondarOffice-Bold, sans-serif;
+	margin-bottom: 10px;
+}
+
+.communes {
+	font-family: BondarOffice-Regular, sans-serif;
+}
+/* 9. Lieux de travail */
+
+
+
+
+/* 10. Footer */
+.footer {
+	width: 1200px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+.footer-div-img-vintage img {
+	width: 280px;
+}
+
+.footer-div-img-cle {
+	display: none;
+}
+
+.footer div p {
+	margin-bottom: 10px;
+	font-family: BondarOffice-Bold, sans-serif;
+	font-size: 24px;
+	margin-top: 30px;
+}
+
+.footer div ul a {
+	text-decoration: none;
+	color: #4a4a4a;
+	margin-bottom: 10px;
+}
+
+.footer div ul li {
+	list-style: none;
+	font-size: 22px;
+	font-family:  BondarOffice-Regular, sans-serif;
+	text-decoration: none;
+}
+
+.hvr-underline-from-left:before {
+  background: #ee6a7a;
+  height: 3px;
+}
+
+.footer div ul img {
+	width: 18px;
+	margin-right: 8px;
+	margin-bottom: -1px;
+}
+
+footer div {
+	margin-left: 130px;
+	color: #4a4a4a;
+}
+
+.casia-2017 {
+	width: 100%;
+	text-align: center;
+	font-family: BondarOffice-Regular, sans-serif;
+}
+
+.casia-2017 span {
+	font-family:  BondarOffice-Bold, sans-serif;
+}
+
+.casia-2017 span a {
+	font-family: BondarOffice-Bold, sans-serif;
+	text-decoration: none;
+	font-size: 15px;
+	letter-spacing: -0.5px;
+	color: #4a4a4a;
+	transition-property: all;
+  	transition-duration: .2s; /* on aurait pu écrire 500ms également */
+  	transition-timing-function: ease-in;
+
+}
+/* 10. Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================  Médium résolution  ======================================*/
+
+@media screen and (max-width: 1470px) {
+
+	/* 1. Nav-bar */
+	.competences {
+		margin-right: 44px;
+	}
+
+	.gsm span {
+		margin-left: 0px;
+	}
+	/* 1. Nav-bar */
+
+
+
+	/* 7. Cotation travail  */
+	#head_slider {
+		width: 1100px;
+	}
+
+	.boites-cotation br {
+		display: none;
+	}
+
+	.boites-texte {
+		font-size: 15px;
+	}
+
+	.boites-title {
+		font-size: 15px;
+	}
+
+	.boite1 {
+		margin-right: 10px;
+	}
+
+	.boite1 p {
+		margin-top: 36px;
+		text-align: center;
+	}
+
+	.boite1-img {
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+	/* 7. Cotation travail  */
+
+
+
+	/* 8. Nous sommes prêts à partir */
+	.container-appel {
+		width: 1100px;
+	}
+	/* 8. Nous sommes prêts à partir */
+
+
+
+
+	/* 9. Lieux de travail */
+	.lieux_de_travail {
+		width: 1100px;
+	}
+	/* 9. Lieux de travail */
+
+
+
+
+	/* 10. Footer */
+	.footer {
+		width: 1100px;
+	}
+
+	.footer div p {
+		font-size: 20px;
+	}
+
+	.footer div ul li {
+		font-size: 18px;
+	}
+
+	footer div {
+		margin-left: 100px;
+	}
+	/* 10. Footer */
+
+
+
+
+
+
+
+}
+
+
+/* ==================================  Petite résolution  ======================================*/
+
+@media screen and (max-width: 1150px) {
+
+	/* 7. Cotation travail  */
+	#head_slider {
+		width: 950px;
+	}
+	/* 7. Cotation travail  */
+
+
+
+	/* 8. Nous sommes prêts à partir */
+	.prets-a-partir {
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+
+	.container-appel {
+		width: 950px;
+	}
+	/* 8. Nous sommes prêts à partir */
+
+
+
+
+	/* 9. Lieux de travail */
+	.lieux_de_travail {
+		width: 950px;
+	}
+	/* 9. Lieux de travail */
+
+
+
+
+	/* 10. Footer */
+	.footer {
+		width: 950px;
+	}
+
+	.footer div ul li {
+		font-size: 16px;
+	}
+
+	footer div {
+		margin-left: 80px;
+	}
+	/* 10. Footer */
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==================================  casia-tablet  ======================================*/
+
+@media screen and (max-width: 991px) {
+
+	/* 1. Nav-bar */
+	.nav-bar {
+		justify-content: space-between;
+	}
+
+	.logo {
+		margin-left: 30px;
+	}
+
+	.competences {
+		display: none;
+	}
+
+	.gsm {
+		margin-right: 30px;
+	}
+
+	.gsm span {
+		margin-left: 10px;
+	}
+	/* 1. Nav-bar */
+
+
+
+	/* 7. Cotation travail  */
+	#head_slider {
+		width: 720px;
+	}
+
+	.boites-cotation {
+		margin-right: 10px;
+	}
+
+	.boite1 {
+		display: none;
+	}
+	/* 7. Cotation travail  */
+
+
+
+	/* 8. Nous sommes prêts à partir */
+	.prets-a-partir {
+		padding-top: 20px;
+		padding-bottom: 70px;
+	}
+
+	.container-appel {
+		width: 720px;
+	}
+	/* 8. Nous sommes prêts à partir */
+
+
+
+
+	/* 9. Lieux de travail */
+	.lieux_de_travail {
+		display: none;
+	}
+	/* 9. Lieux de travail */
+
+
+
+
+	/* 10. Footer */
+	.footer {
+		width: 720px;
+	}
+
+	.footer-div-img-vintage img {
+		width: 220px;
+	}
+
+	.footer div p {
+		margin-top: 15px;
+	}
+
+	.footer div ul img {
+		width: 13px;
+	}
+
+	footer div {
+		margin-left: 50px;
+	}
+	/* 10. Footer */
+
+
+}
+
+
+
+
+
+
+/* ==================================  1/2 tablette  ======================================*/
+
+@media screen and (max-width: 750px) {
+
+	.contact {
+		justify-content: space-between;
+		max-width: 350px;
+	}
+
+	.appel {
+		padding-left: 15px;
+		padding-right: 0px;
+
+		width: 190px;
+		font-size: 18px;
+	}
+
+	.appel img {
+		padding-right: 4px;
+	}
+
+	.e-mail {
+		margin-left: 10px;
+		padding-left: 12px;
+		padding-right: 8px;
+
+		width: 100px;
+		font-size: 18px;
+	}
+
+	.e-mail img {
+		padding-right: 4px;
+	}
+
+
+
+	/* 1. Nav-bar */
+	.nav-bar {
+		height: 50px;
+	}
+
+	.logo {
+		width: 70px;
+		margin-left: 20px;
+	}
+
+	.gsm {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+		margin-right: 20px;
+		font-size: 12px;
+		min-width: 250px;
+		width: 55%;
+	}
+
+	.gsm span {
+		margin-left: 0%;
+	}
+	/* 1. Nav-bar */
+
+
+
+	/* 7. Cotation travail  */
+	#head_slider {
+		margin-top: 50px;
+		height: 200px;
+		width: 94%;
+	}
+
+	#head_slider_fleche_droite {
+		float: right;
+		height: 200px;
+	}
+
+	#head_slider_fleche_gauche {
+		float: left;
+		transform: rotate(180deg);
+		height: 200px;
+	}
+
+	#head_slider_content_list {
+		overflow: hidden;
+		height: 200px;
+		margin: auto;
+		width: auto;
+	}
+
+	#head_slider_content {
+		float: left;
+		height: 200px;
+		width: 300%;
+	}
+
+	#head_slider_content>* {
+		float: left;
+		padding: 10px;
+		width: calc(100% / 3);
+		height: 200px;
+	}
+
+	.boites-cotation p {
+		font-size: 18px;
+	}
+
+	.fleches {
+		display: flex;
+	}
+
+	.fleches img {
+		width: 50px;
+	}
+	/* 7. Cotation travail  */
+
+
+
+	/* 8. Nous sommes prêts à partir */
+	.prets-a-partir {
+		margin-top: 50px;
+		padding-top: 5px;
+		padding-bottom: 35px;
+		height: auto;
+	}
+
+	.container-appel {
+		padding-left: 10%;
+		width: 94%;
+	}
+	/* 8. Nous sommes prêts à partir */
+
+
+
+}
+
+
+
+
+
+
+/* ==================================  1/4 tablette  ======================================*/
+
+@media screen and (max-width: 620px) {
+
+	h2 br {
+		display: flex;
+	}
+	
+	.colones-display {
+		flex-direction: column;
+	}
+	
+	.colones-display p {
+		width: 94%;
+		font-size: 18px;
+	}
+
+	/* 8. Nous sommes prêts à partir */
+	.container-appel {
+		padding-left: 0;
+	}
+	/* 8. Nous sommes prêts à partir */
+
+
+
+
+	/* 10. Footer */
+	.footer {
+		padding-top: 40px;
+		padding-bottom: 50px;
+		width: 100%;
+	}
+
+	.footer-div-img-cle img {
+		height: 250px;
+	}
+
+	.footer-div-img-vintage {
+		display: none;
+	}
+
+	.footer-div-img-cle {
+		display: flex;
+		margin-right: 20px;
+	}
+
+	.display-on-mobile {
+		display: none;
+	}
+
+	.footer-contact {
+		margin-top: 20px;
+	}
+
+	.footer div p {
+		font-size: 24px;
+	}
+
+	.footer div ul li {
+		font-size: 20px;
+	}
+
+	.footer div ul img {
+		width: 20px;
+	}
+
+	footer div {
+		margin-left: 0px;
+	}
+
+	.casia-2017 {
+		font-size: 15px;
+	}
+	/* 10. Footer */
+}
+
+
+
+
+
+/* ==================================  Mobile  ======================================*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+	.contact {
+		justify-content: space-around;
+		margin-top: 30px;
+		width: 100%;
+		height: 100px;
+	}
+
+	.appel {
+		padding: 20px;
+		padding-top: 25px;
+		padding-left: 40px;
+		padding-right: 0px;
+
+		width: 500px;
+		font-size: 46px;
+		border-radius: 60px;
+		letter-spacing: 3px;
+	}
+
+	.appel img {
+		width: 38px;
+		margin-top: 0px;
+		margin-right: 5px;
+	}
+
+	.e-mail {
+		margin-left: auto;
+		padding: 30px;
+		padding-left: 35px;
+		padding-top: 25px;
+
+		width: 240px;
+		border-radius: 60px;
+		font-size: 46px;
+		letter-spacing: 3px;
+	}
+
+	.e-mail img {
+		width: 50px;
+		margin-top: -4px;
+		margin-bottom: -16px;
+	}
+
+
+	/* 1. Nav-bar */
+	.nav-bar {
+		justify-content: space-around;
+		height: 150px;
+	}
+
+	.logo {
+		margin-top: 30px;
+		width: 180px;
+	}
+
+	.gsm {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 65px;
+		font-size: 35px;
+		width: 65%;
+	}
+
+	.gsm span {
+		margin-left: 0%;
+	}
+	/* 1. Nav-bar */
+
+
+
+	/* 7. Cotation travail  */
+	#head_slider {
+		height: 400px;
+		width: 94%;
+	}
+
+	#head_slider_fleche_droite {
+		float: right;
+		height: 400px;
+	}
+
+	#head_slider_fleche_gauche {
+		float: left;
+		transform: rotate(180deg);
+		height: 400px;
+	}
+
+	#head_slider_content_list {
+		overflow: hidden;
+		height: 400px;
+		margin: auto;
+		width: auto;
+	}
+
+	#head_slider_content {
+		float: left;
+		height: 400px;
+		width: 300%;
+	}
+
+	#head_slider_content>* {
+		float: left;
+		width: calc(100% / 3);
+		height: 400px;
+	}
+
+	.boites-cotation  {
+		padding: 20px;
+	}
+
+	.boites-cotation img {
+		width: 200px;
+	}
+
+	.boites-cotation p {
+		font-size: 40px;
+		line-height: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.fleches {
+		display: flex;
+	}
+
+	.fleches img {
+		width: 100px;
+	}
+	/* 7. Cotation travail  */
+
+
+
+	/* 8. Nous sommes prêts à partir */
+	.prets-a-partir {
+		padding-top: 20px;
+		padding-bottom: 70px;
+		height: auto;
+	}
+
+	.container-appel {
+		width: 94%;
+	}
+	/* 8. Nous sommes prêts à partir */
+
+
+
+	/* 10. Footer */
+	.footer {
+		width: 100%;
+	}
+
+	.footer img {
+		width: 450px;
+		margin-right: 50px;
+	}
+
+	.footer-div-img-vintage {
+		display: none;
+	}
+
+	.footer-div-img-cle {
+		display: flex;
+	}
+
+	.display-on-mobile {
+		display: none;
+	}
+
+	.footer-contact {
+		margin-top: 50px;
+	}
+
+	.footer div p {
+		font-size: 54px;
+	}
+
+	.footer div ul li {
+		font-size: 50px;
+	}
+
+	.footer div ul img {
+		width: 40px;
+	}
+
+	footer div {
+		margin-left: 0px;
+	}
+
+	.casia-2017 {
+		font-size: 35px;
+	}
+	/* 10. Footer */
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
