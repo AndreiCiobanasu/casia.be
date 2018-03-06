@@ -6,5 +6,5 @@ J'ai fini ce site avant d'apprendre GitHub, c'est pour ça qu'il
 n'a pas d'autres commits pour l'instant.
 
 Actuellement il faut que je corrige certains bugs comme le slider 
-sur la homepage, et l'animation de la clée qui devrait bouger sur
+sur la homepage, et la clée qui devrait s'animer sur
 toutes les navigateurs.
